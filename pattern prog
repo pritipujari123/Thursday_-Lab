@@ -1,0 +1,187 @@
+import java.util.Scanner;
+import java.util.Scanner;
+
+public class Patterns {
+
+
+			    public static void main(String[] args)
+		{
+		    Scanner sc = new Scanner(System.in);
+		    System.out.println("Enter the number of rows: ");
+		    int rows = 5, k = 0;
+
+		    for (int i = 1; i <= rows; ++i, k = 0) {
+		      for (int space = 1; space <= rows - i; ++space) {
+		        System.out.print("  ");
+		      }
+
+		      while (k != 2 * i - 1) {
+		        System.out.print("* "); 
+		        ++k;
+		      }
+
+		      System.out.println();
+		    }
+		}
+	}
+
+
+  ---------------------
+  ---------------------
+
+  class Alpha {
+
+  public static void main(String args[]) {
+    int n = 5;
+
+    char ch = 'A';
+
+	for (int i = 0; i <= 4; i++) {
+
+	for (int j = 0; j <= i; j++) {
+
+		System.out.print(ch++);}
+
+	System.out.println();
+
+	}
+
+}
+
+}
+
+-----------------------
+-----------------------
+
+
+public class Number {
+
+	public static void main(String[] args) {
+
+		int i,j;
+		for(i=1;i<=5;i++)
+		{
+			for(j=4;j>=i;j--)
+			{
+				System.out.print(" ");	
+			}
+			for(j=1;j<=i;j++)
+			{
+					if(j%2==0)
+					{
+						System.out.print("0");
+					}
+					else
+					{
+						System.out.print("1");
+					}
+			}
+			System.out.println();
+		}	
+	}
+}
+
+
+-----------------------
+-----------------------
+
+
+package abc;
+
+public class Pattern1 {
+
+	public static void main(String[] args) {
+		for(int i=5;i>=1;i--)
+		{
+			for(int j=5;j>i;j--)
+			{
+				System.out.print(" ");
+			}
+			for (int j=1;j<=(2*i-1);j++)
+			{
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+
+
+	}
+
+}
+
+-------------------------
+-------------------------
+
+package abc;
+
+public class Pattern2 {
+
+	public static void main(String[] args) {
+		for(int i=0;i<4;i++)
+		{
+			for(int j=0;j<4;j++)
+			{
+				if(i==0||j==0||j==3||i==3)
+				{
+					System.out.print("*");
+				}
+				else
+				{
+					System.out.print(" ");
+				}	
+			}
+		System.out.println();
+		}
+	}
+
+}
+
+---------------------
+---------------------
+
+package  abc;
+import java.util.Scanner;
+
+public class Prog_Accept {
+
+	public static void main(String[] args) {
+Scanner sc = new Scanner (System.in);
+
+		System.out.println("Enter age");
+		int age = sc.nextInt();
+
+		System.out.println("Enter sex: M/F");
+		int sex = sc.next().charAt(0);
+
+		if(sex == 'F') 
+		{
+			if(age >= 60) 
+			{
+				System.out.println("Rate of interrest=7.5%");
+			}
+			else if( age <60 ) 
+			{
+				System.out.println("Rate of interrest=5%");
+			}
+		}
+		if(sex == 'M')
+		{
+			if(age >= 60) 
+			{
+				System.out.println("Rate of interrest=7%");
+			}
+			else if( age <60 ) 
+			{
+				System.out.println("Rate of interrest=5%");
+			}
+		else 
+		{
+			System.out.println("ERROR");
+		}
+
+	}
+
+	}
+
+}
+
